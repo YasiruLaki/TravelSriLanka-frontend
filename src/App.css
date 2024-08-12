@@ -1,38 +1,255 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.title{
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-top: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title-2{
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+  margin-top: 0px;
+  font-size: 22px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subtitle{
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button{
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.input-text{
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  border: none;
+  background-color: transparent;
+}
+
+.input-text:focus{
+  border: rgba(0, 0, 0, 0.42) 1px solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.input-text::placeholder{
+  color: rgb(0, 0, 0);
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.normal-btn{
+  background-color:#D9D9D9;
+}
+
+.emphasize{
+  font-size: 90px;
+}
+
+.line{
+  border-bottom: 1px solid #0000007e;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Landing Section */
+
+.landing-section{
+  background-image: linear-gradient(to top, #ffffff,#ffffffaf 20%, #ffffffa6 30%,#ffffff00 40%, #ffffff00), linear-gradient(to right, #000e10de, #00181a25, #00181a00),
+  url('/public/images/nine-arch.jpg');
+  background-size: 2670px;
+  background-position: -189px;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 1326px;
+  overflow: hidden;
+  background-clip: border-box;
+}
+
+.landing-title-container{
+  margin-left: 118px;
+  margin-top: 260px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.landing-title{
+  font-size: 60px;
+  line-height: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.landing-subtitle{
+  font-size: 20px;
+  opacity: 53%;
+  line-height: 25px;
+}
+
+.landing-btn {
+  color: white;
+  background: linear-gradient(to right, #d9d9d92f, #73737332);
+  backdrop-filter: blur(75px);
+  transition: 0.3s ease;
+  margin-top: 30px;
+}
+
+.landing-btn:hover {
+  color: black;
+  background-color: #d9d9d997;
+  cursor: pointer;
+}
+
+.landing-hotels-container{
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 30px;
+  margin-top: 130px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background: linear-gradient(to right, #9b9797da, #b5b5b8e9);
+  backdrop-filter: blur(3px);
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.378);
+}
+
+.landing-hotels-title{
+  margin-top: 0px;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.landing-hotels-subtitle{
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 75%;
+  margin-top: 0px;
+}
+
+.landing-hotels-info{
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.landing-hotels-info-item-title{
+  margin-bottom: 0px;
+}
+
+.landing-hotels-info-item-subtitle{
+  opacity: 75%;
+  font-size: 17px;
+}
+
+.landing-hotels-info-item-input{
+  opacity: 75%;
+  font-size: 17px;
+  text-overflow: ellipsis;
+}
+
+.booking-button{
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.575);
+  background-color: white;
+  backdrop-filter: blur(2px);
+  transition: 200ms ease;
+}
+
+.booking-button:hover{
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.575);
+}
+
+/* Top Locations Section */
+
+.top-locations-section{
+  margin-left: 118px;
+  margin-right: 118px;
+  margin-top: -250px;
+}
+
+.top-locations-title{
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.top-locations-container{
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top-locations-item{
+  background-image:linear-gradient(to top, #fffffff1, #ffffffcc 25%,#ffffff00, #ffffff00), url('/public/images/sigiriya.png');
+  width: 360px;
+  border-radius: 25px;
+  height: 430px;
+  background-color: #D9D9D9;
+  margin-bottom: 10px;
+}
+
+.item-number{
+  display: inline-flex;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 5px;
+  margin-left: 18px;
+  margin-top: 25px;
+  background-color: white;
+  border-radius: 8px;
+  width: auto;
+}
+
+.top-locations-item-title{
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 215px;
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-bottom: 4px;
+}
+
+.top-locations-item-subtitle{
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-top: 2px;
+  text-align: justify;
+  display: -webkit-box;
+   -webkit-line-clamp: 4;
+           line-clamp: 4;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
 }
